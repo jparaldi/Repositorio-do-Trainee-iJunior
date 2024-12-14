@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Unbounded&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+
+img{
+    max-width: 100%;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+p{
+    line-height: 1.8;
+    color:hsl(236, 13%, 42%);
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 15px;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem;
+}
+
+.cabecalho nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.chamativo {
+    padding: 1.25rem;
+    padding-top: 0;
+}
+
+.chamativo h1{
+    font-size: 2rem;
+    color: hsl(240, 100%, 5%);
+    margin: 1rem 0;
+    font-weight: 900;
+}
+
+.chamativo div:first-child article p{
+    margin-bottom: 2rem;
+}
+
+.chamativo div:first-child article button{
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.chamativo div:first-child article button:hover{
+    background-color: hsl(240, 100%, 5%);
+    cursor: pointer;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.chamativo > div:nth-child(2){
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    margin-left: 2rem;
+    padding: 1.3rem 1.3rem 0;
+}
+
+.chamativo > div:nth-child(2) p{
+    margin-left: 1rem;
+    color: hsl(236, 13%, 42%);
+    margin-bottom: 1rem;
+}
+
+.chamativo > div:nth-child(2) article{
+    padding-top: 1rem;
+}
+
+.chamativo > div:nth-child(2) article:not(last-child){
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+    margin: 0 1rem auto 0.7rem; 
+}
+.chamativo > div:nth-child(2) h3{
+    margin-left: 0.7rem;  
+}
+
+.chamativo > div:nth-child(2) h2{
+    margin-left: 0.7rem;
+    margin-bottom: 0.3rem;
+    padding-top: 1rem;
+    padding: 0.5rem 1.3rem 0;
+}
+
+.chamativo > div:nth-child(2) h3:hover{
+    margin-left: 0.7rem;
+    color:hsl(35, 77%, 62%);
+    cursor:pointer;
+
+}
+
+.cartoes {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.cartoes article{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.cartoes article img{
+    width:20%;
+}
+
+.cartoes p{
+    font-size: 15px;
+}
+
+@media (min-width:1024px){
+    .chamativo{
+    display: flex;
+    gap:1.5rem;
+    flex-direction: row;
+    }
+
+    .chamativo >div:first-child article{
+        display:flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        gap:2rem;
+    }
+    .chamativo > div:last-child{
+        margin-top: 0;
+    }
+}
